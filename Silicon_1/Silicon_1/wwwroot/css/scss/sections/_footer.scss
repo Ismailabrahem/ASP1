@@ -1,0 +1,41 @@
+footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .container {
+        text-align: center;
+
+        .social-media {
+            display: none;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            
+
+            @include md {
+                display: flex;
+            }
+        }
+
+        .copyright {
+            @include font;
+            color: var(--color-gray-600);
+            font-size: 14px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+
+            @include xl {
+                width: 60%;
+            }
+
+            span {
+                display: none;
+
+                @include xl {
+                    display: inline;
+                }
+            }
+        }
+    }
+}

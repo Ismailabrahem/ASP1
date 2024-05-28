@@ -1,0 +1,115 @@
+.sign-up {
+    display: flex;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    align-items: center;
+
+    @include font;
+
+    a {
+        text-decoration: none;
+        color: var(--color-theme);
+    }
+
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+
+        @include sm {
+            width: 90%;
+        }
+
+        @include md {
+            width: 40%;
+        }
+
+        @include xl {
+            width: 30%;
+        }
+
+        .sign-title {
+
+
+            h1 {
+                @include font-h1
+            }
+
+            .no-account {
+                display: flex;
+                gap: 5px;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                color: var(--color-gray-700);
+            }
+        }
+
+        form {
+
+            input {
+                margin-bottom: 15px !important;
+                margin-top: 5px;
+            }
+
+
+            .signup-name {
+                display: grid;
+
+                @include sm {
+                    display: grid;
+                }
+
+                @include md {
+                    display: flex;
+                    gap: 20px;
+                }
+
+                @include xl {
+                    display: flex;
+                    gap: 20px;
+                }
+            }
+
+            .input-group {
+                color: var(--color-gray-900);
+                font-weight: var(--font-weight-bold);
+                font-size: 16px;
+                position: relative;
+
+                label {
+                    margin-bottom: 4px;
+                }
+
+                span {
+                    position: absolute;
+                    top: 85%;
+                }
+            }
+
+            .checkbox-group {
+                margin-bottom: 25px;
+
+                input[type = checkbox] {
+                    margin-right: 10px;
+                }
+
+                .input-group {
+                    display: flex;
+                    align-items: center;
+                    font-weight: var(--font-weight-regular);
+                    color: var(--color-gray-700);
+                }
+            }
+
+            .alert {
+                margin: 0;
+                padding: 10px;
+            }
+
+
+            button {
+                font-size: 16px;
+            }
+        }
+    }
+}

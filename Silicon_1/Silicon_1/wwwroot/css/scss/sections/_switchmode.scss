@@ -1,0 +1,115 @@
+.switch-mode {
+    @include font;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    height: 70vh;
+
+    @include sm {
+        height: 70vh;
+    }
+
+    @include md {
+        height: 100vh;
+    }
+
+    @include xl {
+        height: 100vh;
+    }
+
+    .dark-switch-mode {
+        background-color: var(--color-gray-900);
+        text-align: end;
+        color: white;
+        border-right: 2px solid #6366F1;
+
+        .switch-title {
+            h2 {
+                font-size: 40px;
+                margin-top: 10%;
+                margin-right: 0.5%;
+                font-weight: var(--font-weight-extrabold);
+            }
+        }
+    }
+
+    .light-switch-mode {
+        background-color: white;
+        border-left: 2px solid #6366F1;
+
+        .switch-title {
+            h2 {
+                font-size: 40px;
+                margin-top: 10%;
+                margin-left: 0.5%;
+                font-weight: var(--font-weight-extrabold);
+            }
+        }
+    }
+
+    .macbook {
+        position: absolute;
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        display: none;
+
+        @include sm {
+            display: none;
+        }
+
+        @include md {
+            display: block;
+        }
+
+        @include xl {
+            display: block;
+        }
+    }
+
+    .macbook-small {
+        display: block;
+        position: absolute;
+        padding-top: 250px;
+
+
+        .btn-switchmode {
+            position: absolute;
+            margin-top: 100px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        @include sm {
+            display: block;
+        }
+
+        @include md {
+            display: none;
+        }
+
+        @include xl {
+            display: none;
+        }
+    }
+
+    .macbook-border {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background-color: #6366F1;
+        transform: translateX(-50%);
+    }
+
+    .btn-switchmode {
+        position: absolute;
+        left: 50%;
+        top: 45%;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+}
